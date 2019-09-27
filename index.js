@@ -10,6 +10,9 @@
 
 const unmix = str => {
 
+  const test = 'banana';
+  return test;
+
 };
 
 module.exports = unmix;

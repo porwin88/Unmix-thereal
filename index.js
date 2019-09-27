@@ -9,7 +9,20 @@
 // unmix("123456") ➞ "214365"
 
 const unmix = str => {
-
+  console.log(str)
+  let currentIndex = 0
+  let splitted = str.split('')
+  console.log(splitted)
+  let newArr= []
+  for (let i = 0; i < splitted.length; i = i+2) {
+    newArr.push(splitted[i+1])
+    newArr.push(splitted[i])
+    console.log(splitted[i])
+  }
+  console.log(newArr.join())
+  return newArr.join().replace(/[,]+/g, "")
 };
+
+
 
 module.exports = unmix;
